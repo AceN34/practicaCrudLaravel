@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.header{
+    @apply h-15v bg-header
+    flex flex-row justify-between px-3 items-center
+}
