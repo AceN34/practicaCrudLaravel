@@ -10,12 +10,10 @@
 </head>
 <body>
 <x-layouts.header />
-<x-layouts.nav />
-<main class="h-65v bg-main">
-    {{$slot}}
-</main>
-<x-layouts.footer />
-
-
+@auth
+    <x-layouts.nav />
+@endauth
+{{$slot}}
+<x-layouts.footer/>
 </body>
 </html>
