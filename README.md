@@ -11,3 +11,5 @@
 ### 5º Añado lang (traducciones a la web), y añado traducciones
 
 ### 6º Añadidas traducciones a todos los botones
+
+### 7º Pongo titulo a todos los sitios web
