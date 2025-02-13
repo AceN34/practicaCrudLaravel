@@ -9,3 +9,5 @@
 ### 4º Añado la funcionalidad del botón DELETE e importo las sweetalerts para confirmar borrado
 
 ### 5º Añado lang (traducciones a la web), y añado traducciones
+
+### 6º Añadidas traducciones a todos los botones

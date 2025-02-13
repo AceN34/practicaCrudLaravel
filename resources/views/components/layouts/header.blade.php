@@ -13,8 +13,8 @@
 
         @endauth
         @guest
-                <a class="btn  btn-glass mr-2" href="{{route("login")}}">Login</a>
-                <a class="btn  btn-glass mr-2" href="{{route("register")}}">Register</a>
+                <a class="btn  btn-glass mr-2" href="{{route("login")}}">{{__("Login")}}</a>
+                <a class="btn  btn-glass mr-2" href="{{route("register")}}">{{__("Register")}}</a>
         @endguest
             <x-layouts.lang/>
     </div>

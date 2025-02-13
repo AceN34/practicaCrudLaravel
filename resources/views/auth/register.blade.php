@@ -1,5 +1,5 @@
 <x-layouts.layout titulo="Register">
-    <a class="btn btn-glass fixed right-3 bottom-3" href="{{route("home")}}">Volver</a>
+    <a class="btn btn-glass fixed right-3 bottom-3" href="{{route("home")}}">{{__("Volver")}}</a>
     <div class="flex flex-row justify-center items-center min-h-screen bg-blue-200">
         <!-- Session Status -->
         <div class="bg-white rounded-2xl p-5">

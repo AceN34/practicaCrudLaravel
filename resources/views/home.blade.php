@@ -13,7 +13,7 @@
                     <p class="mb-5">
                     Registrate para acceder a las opciones de gestión
                     </p>
-                    <a href="{{route("login")}}"><button class="btn btn-primary">Login</button></a>
+                    <a href="{{route("login")}}"><button class="btn btn-primary">{{__("Login")}}</button></a>
                 </div>
             </div>
         </div>

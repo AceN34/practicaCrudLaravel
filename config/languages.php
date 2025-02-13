@@ -5,7 +5,7 @@ return[
         "flag"=>"🇪🇸",
     ],
     "fr"=>[
-        "name"=>"France",
+        "name"=>"Français",
         "flag"=>"🇫🇷",
     ],
     "en"=>[
