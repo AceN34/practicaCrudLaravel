@@ -8,6 +8,7 @@ Route::resource('productos', ProductosController::class)->middleware('auth');
 
 Route::view("/","home")->name("home");
 
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');

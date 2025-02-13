@@ -9,5 +9,5 @@ class Productos extends Model
 {
     /** @use HasFactory<\Database\Factories\ProductosFactory> */
     use HasFactory;
-    public $fillable=["código","nombre","unidades", "familia"];
+    public $fillable=["nombre","codigo","unidades","familia"];
 }
