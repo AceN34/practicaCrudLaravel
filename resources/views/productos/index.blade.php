@@ -16,11 +16,11 @@
         </div>
     @endif
     <div class="p-2 bg-gray-300">
-        <a class="btn btn-sm btn-secondary" href="{{route("productos.create")}}">Crear Alumno</a>
+        <a class="btn btn-sm btn-secondary" href="{{route("productos.create")}}">Crear Producto</a>
         <a class="btn btn-sm btn-secondary" href="{{route("home")}}">Volver</a>
     </div>
     <div class="max-h-full overflow-x-auto">
-        <table class="table table-xs table-pin-rows table-pin-cols">
+        <table class="table table-xs table-pin-rows table-pin-cols bg-emerald-800">
             <thead>
             <tr>
                 @foreach($campos as $campo)

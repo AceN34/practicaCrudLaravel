@@ -70,8 +70,7 @@ class ProductosController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Productos $producto)
-    {
+    public function destroy(Productos $producto) {
         $producto->delete();
         session()->flash("mensaje","Producto $producto->nombre eliminado");
         return redirect()->route('productos.index');
