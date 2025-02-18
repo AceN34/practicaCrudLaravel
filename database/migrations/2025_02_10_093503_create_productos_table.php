@@ -17,6 +17,10 @@ return new class extends Migration
             $table->integer('codigo');
             $table->integer('unidades');
             $table->string('familia');
+            $table->foreignId('proveedor_id')
+                ->constrained('proveedores')  // Establece la clave foránea
+                ->onDelete('cascade')  // Si se elimina un proveedor, también se eliminan los productos relacionados
+                ->onUpdate('cascade');  // Si se actualiza el ID del proveedor, también se actualizan los productos
             $table->timestamps();
         });
     }

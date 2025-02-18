@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use App\Models\Proveedor;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -27,7 +28,8 @@ class ProductosFactory extends Factory
             "familia" => $this->faker->randomElement([
                 "Snacks", "Bebidas", "Helado", "Congelados", "Salsas",
                 "Higiene", "Pastas y Arroces", "Fruta"
-            ])
+            ]),
+            'proveedor_id' => Proveedor::factory(), // Relacionar con un proveedor creado automáticamente
         ];
     }
 }

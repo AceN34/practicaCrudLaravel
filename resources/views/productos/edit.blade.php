@@ -55,7 +55,21 @@
                         {{$message}}
                     </div>
                     @enderror
-
+                    <!-- Selección de proveedor -->
+                    <label for="proveedor">Seleccionar Proveedor:</label>
+                    <select name="proveedor_id">
+                        @foreach($proveedores as $proveedor)
+                            <option value="{{ $proveedor->id }}"
+                                    @if($proveedor->id == $producto->proveedor_id) selected @endif>
+                                {{ $proveedor->nombre }}
+                            </option>
+                        @endforeach
+                    </select>
+                    @error("proveedor_id")
+                    <div class="text-sm text-red-600">
+                        {{$message}}
+                    </div>
+                    @enderror
                 </div>
                 <div class="p-2">
                     <button class= "btn btn-sm btn-success"  type="submit">Guardar </button>

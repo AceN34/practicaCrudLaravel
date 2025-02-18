@@ -52,6 +52,24 @@
                         {{$message}}
                     </div>
                 @enderror
+                <!-- Proveedor -->
+                <div>
+                    <x-input-label for="proveedor_id" value="Proveedor"/>
+                    <select name="proveedor_id" id="proveedor_id" class="block mt-1 w-full">
+                        <option value="">Selecciona un proveedor</option>
+                        @foreach($proveedores as $proveedor)
+                            <option value="{{ $proveedor->id }}"
+                                {{ old('proveedor_id') == $proveedor->id ? 'selected' : '' }}>
+                                {{ $proveedor->nombre }}
+                            </option>
+                        @endforeach
+                    </select>
+                    @error("proveedor_id")
+                    <div class="text sm text-red-600">
+                        {{ $message }}
+                    </div>
+                    @enderror
+                </div>
                 <div class="p-2">
                     <button class= "btn btn-sm btn-success"  type="submit">Guardar </button>
                     <a class= "btn btn-sm btn-success" href="{{route("productos.index")}}">Cancelar</a>

@@ -13,3 +13,5 @@
 ### 6º Añadidas traducciones a todos los botones
 
 ### 7º Pongo titulo a todos los sitios web
+
+### 8º Añado proveedores y funcionamiento como foreign key de productos

@@ -2,14 +2,17 @@
 
 namespace Database\Seeders;
 
-use App\Models\Productos;
+use App\Models\Proveedor;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
-class ProductosSeeder extends Seeder
+class ProveedorSeeder extends Seeder
 {
+    /**
+     * Run the database seeds.
+     */
     public function run(): void
     {
-        Productos::factory()->count(10)->create();
+        Proveedor::factory(10)->create();
     }
 }
