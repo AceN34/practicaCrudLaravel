@@ -22,4 +22,4 @@
 
 ### 11º y 12º Composer update para despliegue
 
-### 13º PHP 8.2 instalado para despliegue
+### 13º y 14º PHP 8.2 instalado para despliegue
