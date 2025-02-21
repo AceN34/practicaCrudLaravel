@@ -20,4 +20,6 @@
 
 ### 10º Creo laravel.yml para despliegue github
 
-### 11º Composer update para despliegue
+### 11º y 12º Composer update para despliegue
+
+### 13º PHP 8.2 instalado para despliegue

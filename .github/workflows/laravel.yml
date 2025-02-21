@@ -19,7 +19,7 @@ jobs:
     - name: Copy .env
       run: php -r "file_exists('.env') || copy('.env.example', '.env');"
     - name: php 8.2
-      run: sudo apt update || sudo apt install php8.2
+      run: sudo apt update || sudo apt install php8.2 || sudo update-alternatives --set php /usr/bin/php8.2 || sudo update-alternatives --set php /usr/bin/php8.2 php -v
     - name: Composer Update
       run: composer update
     - name: Install Dependencies
