@@ -17,10 +17,8 @@
                 </div>
                 <div>
                     <x-input-label for="codigo" value="Codigo"/>
-                    <x-text-input id="codigo" class="block mt-1 w-full"
-                                  type="number" name="codigo"
-                                  value="{{$producto->codigo}}"
-                                  required autofocus autocomplete="codigo" />
+                    <x-text-input id="codigo" class="block mt-1 w-full" type="number" name="codigo"
+                                  value="{{$producto->codigo}}"/>
                     @error("codigo")
                     <div class="text-sm text-red-600">
                         {{$message}}
@@ -33,8 +31,7 @@
 
                     <x-text-input id="unidades" class="block mt-1 w-full"
                                   type="number" name="unidades"
-                                  value="{{$producto->unidades}}"
-                                  required autofocus autocomplete="Unidades" />
+                                  value="{{$producto->unidades}}"/>
                     @error("unidades")
                     <div class="text-sm text-red-600">
                         {{$message}}
@@ -46,8 +43,7 @@
                     <x-input-label for="familia" value="Familia" />
                     <x-text-input id="familia" class="block mt-1 w-full"
                                   type="text" name="familia"
-                                  value="{{$producto->familia}}"
-                                  required autofocus autocomplete="Familia"/>
+                                  value="{{$producto->familia}}"/>
                     @error("familia")
                     <div class="text-sm text-red-600">
                         {{$message}}

@@ -77,7 +77,7 @@ class ProductosController extends Controller
      */
     public function update(UpdateProductosRequest $request, Productos $producto)
     {
-        $datos = $request->only("nombre", "email", "f_nac", "dni", "proveedor_id"); //Le especifico los campos de la request
+        $datos = $request->only("nombre", "codigo", "unidades", "familia", "proveedor_id"); //Le especifico los campos de la request
         $producto->update($datos); //Actualizamos datos
         session()->flash("mensaje","Producto $producto->nombre actualizado"); // Mensaje flotante
         return redirect()->route('productos.index');
