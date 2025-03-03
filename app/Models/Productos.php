@@ -12,6 +12,6 @@ class Productos extends Model
     public $fillable=["nombre","codigo","unidades","familia","proveedor_id"];
 
     public function proveedor() {
-        return $this->belongsTo(Proveedor::class);
+        return $this->belongsTo(Proveedor::class, 'proveedor_id');
     }
 }

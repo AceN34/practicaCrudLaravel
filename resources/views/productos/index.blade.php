@@ -56,6 +56,7 @@
                             </button>
                         </form>
                     </td>
+                    <td><a href="{{ route('productos.show', $fila->id) }}">Ver</a></td>
                 </tr>
             @endforeach
             </tbody>

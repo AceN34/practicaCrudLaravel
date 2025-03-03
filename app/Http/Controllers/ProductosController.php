@@ -47,9 +47,15 @@ class ProductosController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Productos $productos)
+    public function show(Productos $producto)
     {
-        //
+        // Cargar el proveedor relacionado con el producto
+        $producto->load('proveedor');
+
+        return view('productos.show', [
+            'producto' => $producto,
+            'proveedor' => $producto->proveedor, // Pasamos el proveedor desde la relación
+        ]);
     }
 
     /**
