@@ -34,4 +34,6 @@
 ### 20º, 21º, 22º y 23º Nuevos cambios despliegue github
 * No he conseguido que funcione el despliegue en github
 
-## 24º Solucionado errores
+### 24º Solucionado errores
+
+### 25º Mensajes modificados

@@ -94,9 +94,10 @@ class ProductosController extends Controller
         // Si el proveedor ya no tiene más productos, lo eliminamos
         if ($proveedor && $proveedor->productos()->count() == 0) {
             $proveedor->delete();
+            session()->flash("mensaje", "Producto $producto->nombre eliminado y su proveedor $proveedor->nombre eliminado");
+        } else {
+            session()->flash("mensaje", "Producto $producto->nombre eliminado");
         }
-
-        session()->flash("mensaje", "Producto $producto->nombre eliminado" . ($proveedor ? " y su proveedor eliminado" : ""));
         return redirect()->route('productos.index');
     }
 }
