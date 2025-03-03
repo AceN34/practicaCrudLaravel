@@ -36,8 +36,8 @@ jobs:
       run: chmod -R 777 storage bootstrap/cache
     - name: Install npm
       run: npm install
-    - name: Install npm
-      run: npm run dev
+    - name: Run npm
+      run: npm run build
     - name: Create Database
       run: |
         mkdir -p database
