@@ -25,3 +25,8 @@
 ### 13º, 14º, 15º y 16º PHP 8.2 instalado para despliegue
 
 ### 17º Añadido ver datos productos
+
+### 18º Modificado borrar
+* Si un proveedor aún tiene productos no se eliminará el proveedor pero si el producto, sin embargo si es el último producto que el queda al proveedor si que elimina tanto el producto como el proveedor
+
+### 19º Modifico visualmente la web

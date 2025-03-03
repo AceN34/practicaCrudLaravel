@@ -23,7 +23,9 @@ return new class extends Migration
                 ->onUpdate('cascade');  // Si se actualiza el ID del proveedor, también se actualizan los productos
             $table->timestamps();
         });
+
     }
+
 
     /**
      * Reverse the migrations.

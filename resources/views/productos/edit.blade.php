@@ -14,8 +14,6 @@
                         {{$message}}
                     </div>
                     @enderror
-
-
                 </div>
                 <div>
                     <x-input-label for="codigo" value="Codigo"/>
@@ -56,8 +54,8 @@
                     </div>
                     @enderror
                     <!-- Selección de proveedor -->
-                    <label for="proveedor">Seleccionar Proveedor:</label>
-                    <select name="proveedor_id">
+                    <x-input-label for="proveedor" value="Proveedor"/>
+                    <select name="proveedor_id" class="block mt-1 w-full text-black">
                         @foreach($proveedores as $proveedor)
                             <option value="{{ $proveedor->id }}"
                                     @if($proveedor->id == $producto->proveedor_id) selected @endif>
