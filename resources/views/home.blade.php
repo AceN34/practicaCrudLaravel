@@ -27,10 +27,10 @@
                     alt="Productos" />
             </figure>
             <div class="card-body">
-                <h2 class="card-title">Administrar tienda</h2>
-                <p>Gestionamos altas, bajas, actualizaciones y borrado de una tabla de productos</p>
+                <h2 class="card-title">{{__("Administrar Tienda")}}</h2>
+                <p>{{__("Gestionamos altas, bajas, actualizaciones y borrado de una tabla de productos")}}</p>
                 <div class="card-actions justify-end">
-                    <a class="btn btn-primary" href="{{route("productos.index")}}">Ver Productos</a>
+                    <a class="btn btn-primary" href="{{route("productos.index")}}">{{__("Ver Productos")}}</a>
                 </div>
             </div>
         </div>

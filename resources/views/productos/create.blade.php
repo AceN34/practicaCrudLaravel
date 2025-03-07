@@ -3,7 +3,7 @@
         <!-- Session Status -->
         <form action="{{route("productos.store")}}" method="POST">
             @csrf
-            <div class="bg-white rounded-2xl p-5">
+            <div class="bg-white rounded-2xl p-5 mt-2 mb-2">
                 <div>
                     <x-input-label for="nombre" value="Nombre"/>
                     <x-text-input id="nombre" class="block mt-1 w-full"

@@ -86,5 +86,8 @@
     "Your email address is unverified.": "Your email address is unverified.",
     "GESTIÓN INSTITUTO": "SCHOOL MANAGEMENT",
     "Volver": "Go Back",
-    "Crear Producto": "Create Product"
+    "Crear Producto": "Create Product",
+    "Ver Productos": "Show Products",
+    "Administrar Tienda": "Manage Store",
+    "Gestionamos altas, bajas, actualizaciones y borrado de una tabla de productos": "We manage additions, deletions, updates and deletions of a product table"
 }

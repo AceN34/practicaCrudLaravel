@@ -85,5 +85,8 @@
     "You're logged in!": "Vous êtes connecté·e !",
     "Your email address is unverified.": "Votre adresse e-mail n'est pas vérifiée.",
     "Volver": "Retour",
-    "Crear Producto": "Créer un Produit"
+    "Crear Producto": "Créer un Produit",
+    "Ver Productos": "Voir les produits",
+    "Administrar Tienda": "Gérer le magasin",
+    "Gestionamos altas, bajas, actualizaciones y borrado de una tabla de productos": "Nous gérons les inscriptions, les annulations, les mises à jour et la suppression d'une table de produits"
 }

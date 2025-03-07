@@ -4,7 +4,7 @@
         <form action="{{route("productos.update", $producto->id)}}" method="POST">
             @method('PUT')
             @csrf
-            <div class="bg-white rounded-2xl p-5">
+            <div class="bg-white rounded-2xl p-5 mt-2 mb-2">
                 <div>
                     <x-input-label for="nombre" value="Nombre"/>
                     <x-text-input id="nombre" class="block mt-1 w-full" type="text" name="nombre"
